@@ -411,5 +411,18 @@ p.sub-desc {
     .header-desc.container h1 {
         font-size: 5rem;
     }
+
+    a.btn.btn-default {
+        margin-top: 2rem;
+    }
+
+    div#footer-bottom img {
+        width: 20%;
+    }
+
+    .socials img {
+        width: 30px !important;
+        margin: 0 .8rem;
+    }
 }
 
