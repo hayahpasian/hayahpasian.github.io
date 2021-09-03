@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -11,7 +12,17 @@
 </head>
 <body>
 <header>
-	<div id="inner-header" style="background-image: url('imgs/header.png')">
+	<div id="inner-header" class="pc" style="background-image: url('imgs/header.png')">
+		<nav class="container">
+			<img class="logo" src="imgs/logo.png" />
+			<a href="tel:+81 80-5513-9932">+81 80-5513-9932</a><a href="mailto:hayahmaep@gmail.com">hayahmaep@gmail.com</a></nav>
+		<div class="header-desc container">
+			<p>Hi, I'm</p>
+			<h1>Hayah Mae</h1>
+			<a href="contact" class="btn btn-default">Let's talk</a>
+		</div>
+	</div>
+	<div id="inner-header" class="mobile" style="background-image: url('imgs/header2.png')">
 		<nav class="container">
 			<img class="logo" src="imgs/logo.png" />
 			<a href="tel:+81 80-5513-9932">+81 80-5513-9932</a><a href="mailto:hayahmaep@gmail.com">hayahmaep@gmail.com</a></nav>
@@ -24,57 +35,93 @@
 </header>
 <section id="about" >
 	<div class="container">
-		<div class="row">
-		<div id="icons" class="col-4">
-			<div class="row"> 
-				<div class="col-6">
+		<div class="row pc">
+			<div id="icons" class="col-4">
+				<div class="row"> 
+					<div class="col-6">
+						<div class="block bg-pink">PHP</div>
+					</div>
+					<div class="col-6">
+						<div class="block bg-lightblue"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="144px" height="144px"><path d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 28.024038 7 31.709309 8.3978967 34.617188 10.724609 C 33.741214 11.338586 33.130859 12.514964 33.130859 13.632812 C 33.130859 15.139812 33.979875 16.458797 34.921875 17.966797 C 35.675875 19.191797 36.427734 20.792688 36.427734 23.054688 C 36.427734 24.656688 35.957625 26.635938 35.015625 29.085938 L 33.130859 35.302734 L 26.441406 15.328125 C 27.572406 15.234125 28.609375 15.140625 28.609375 15.140625 C 29.551375 15.046625 29.457625 13.634766 28.515625 13.634766 L 28.421875 13.634766 C 28.421875 13.634766 25.405734 13.917969 23.427734 13.917969 C 21.637734 13.917969 18.529297 13.634766 18.529297 13.634766 L 18.435547 13.634766 C 17.493547 13.634766 17.399797 15.140625 18.341797 15.140625 C 18.341797 15.140625 19.283313 15.234125 20.320312 15.328125 L 23.240234 23.242188 L 19.189453 35.396484 L 12.40625 15.234375 C 13.53725 15.140375 14.572266 15.046875 14.572266 15.046875 C 15.514266 14.952875 15.420516 13.539063 14.478516 13.539062 L 14.384766 13.539062 C 14.384766 13.539062 12.204194 13.755816 10.394531 13.826172 C 13.491737 9.686863 18.418546 7 24 7 z M 40.064453 18.46875 C 40.659826 20.203957 41 22.059792 41 24 C 41 29.786228 38.119753 34.878526 33.71875 37.947266 L 38.691406 23.527344 C 39.401152 21.730085 39.874837 19.909784 40.064453 18.46875 z M 7.7207031 19.103516 L 14.736328 38.251953 C 10.079497 35.223385 7 29.983248 7 24 C 7 22.296128 7.2567752 20.654052 7.7207031 19.103516 z M 23.994141 25.599609 L 29.335938 40.136719 C 27.657297 40.689556 25.866601 41 24 41 C 22.258089 41 20.578897 40.736024 18.998047 40.251953 L 23.994141 25.599609 z"/></svg></div>
+					</div>
+				</div>
+
+				<div class="row mt-4"> 
+					<div class="col-6">
+						<div class="block bg-lightblue">SQL</div>
+					</div>
+					<div class="col-6">
+						<div class="block bg-pink">CSS</div>
+					</div>
+				</div>
+
+				<div class="row mt-4"> 
+					<div class="col-6">
+						<div class="block bg-pink vb">VB.NET</div>
+					</div>
+					<div class="col-6">
+						<div class="block bg-lightblue"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="256px" height="256px"><path d="M 16 2 C 15.496094 2 15.003906 2.183594 14.625 2.5625 L 11.8125 5.40625 C 11.660156 5.488281 11.53125 5.605469 11.4375 5.75 L 2.5625 14.625 C 1.804688 15.378906 1.804688 16.617188 2.5625 17.375 L 14.625 29.4375 C 15.382813 30.191406 16.617188 30.191406 17.375 29.4375 L 29.4375 17.375 C 30.195313 16.621094 30.195313 15.382813 29.4375 14.625 L 17.375 2.5625 C 16.996094 2.183594 16.503906 2 16 2 Z M 16 4.03125 L 27.96875 16 L 16 27.96875 L 4.03125 16 L 12.3125 7.71875 L 14.0625 9.46875 C 14.015625 9.636719 14 9.816406 14 10 C 14 10.738281 14.402344 11.371094 15 11.71875 L 15 20.28125 C 14.402344 20.628906 14 21.261719 14 22 C 14 23.105469 14.894531 24 16 24 C 17.105469 24 18 23.105469 18 22 C 18 21.261719 17.597656 20.628906 17 20.28125 L 17 12.4375 L 20.0625 15.5 C 20.019531 15.660156 20 15.828125 20 16 C 20 17.105469 20.894531 18 22 18 C 23.105469 18 24 17.105469 24 16 C 24 14.894531 23.105469 14 22 14 C 21.828125 14 21.660156 14.019531 21.5 14.0625 L 17.9375 10.5 C 17.980469 10.339844 18 10.171875 18 10 C 18 8.894531 17.105469 8 16 8 C 15.816406 8 15.636719 8.015625 15.46875 8.0625 L 13.71875 6.3125 Z"/></svg></div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="col-8">
+				<h6 class="title">About Me</h6>
+				<div class="w-100">
+					<p>I have been working as a computer programmer and web developer for more than 2 years. Though my tasks were mostly focused on the front-end side of a website (design/look), I also got to work on the inner workings and back-end of it (coding). 
+					</p>
+				</div>
+				<div class="d-flex w-100">
+					<div class="w-40">
+					<p class="desc-title">Web Design</p>
+					<p class="desc">Lorem ipsum meow I have a neko named Grayham, a persian fat cat.</p>
+				</div>
+				<div class="w-40">
+					<p class="desc-title">Web Design</p>
+					<p class="desc">Lorem ipsum meow I have a neko named Grayham, a persian fat cat.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mobile">
+			<div class="col-12">
+				<h6 class="title">About Me</h6>
+				<div class="w-100">
+					<p>I have been working as a computer programmer and web developer for more than 2 years. Though my tasks were mostly focused on the front-end side of a website (design/look), I also got to work on the inner workings and back-end of it (coding). 
+					</p>
+				</div>
+				<div class="d-flex w-100">
+					<div class="w-40">
+					<p class="desc-title">Web Design</p>
+					<p class="desc">Lorem ipsum meow I have a neko named Grayham, a persian fat cat.</p>
+				</div>
+				<div class="w-40">
+					<p class="desc-title">Web Design</p>
+					<p class="desc">Lorem ipsum meow I have a neko named Grayham, a persian fat cat.</p>
+				</div>
+				</div>
+			</div>
+				<div id="icons" class="col-12 mobile">
+		
 					<div class="block bg-pink">PHP</div>
-				</div>
-				<div class="col-6">
 					<div class="block bg-lightblue"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="144px" height="144px"><path d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 28.024038 7 31.709309 8.3978967 34.617188 10.724609 C 33.741214 11.338586 33.130859 12.514964 33.130859 13.632812 C 33.130859 15.139812 33.979875 16.458797 34.921875 17.966797 C 35.675875 19.191797 36.427734 20.792688 36.427734 23.054688 C 36.427734 24.656688 35.957625 26.635938 35.015625 29.085938 L 33.130859 35.302734 L 26.441406 15.328125 C 27.572406 15.234125 28.609375 15.140625 28.609375 15.140625 C 29.551375 15.046625 29.457625 13.634766 28.515625 13.634766 L 28.421875 13.634766 C 28.421875 13.634766 25.405734 13.917969 23.427734 13.917969 C 21.637734 13.917969 18.529297 13.634766 18.529297 13.634766 L 18.435547 13.634766 C 17.493547 13.634766 17.399797 15.140625 18.341797 15.140625 C 18.341797 15.140625 19.283313 15.234125 20.320312 15.328125 L 23.240234 23.242188 L 19.189453 35.396484 L 12.40625 15.234375 C 13.53725 15.140375 14.572266 15.046875 14.572266 15.046875 C 15.514266 14.952875 15.420516 13.539063 14.478516 13.539062 L 14.384766 13.539062 C 14.384766 13.539062 12.204194 13.755816 10.394531 13.826172 C 13.491737 9.686863 18.418546 7 24 7 z M 40.064453 18.46875 C 40.659826 20.203957 41 22.059792 41 24 C 41 29.786228 38.119753 34.878526 33.71875 37.947266 L 38.691406 23.527344 C 39.401152 21.730085 39.874837 19.909784 40.064453 18.46875 z M 7.7207031 19.103516 L 14.736328 38.251953 C 10.079497 35.223385 7 29.983248 7 24 C 7 22.296128 7.2567752 20.654052 7.7207031 19.103516 z M 23.994141 25.599609 L 29.335938 40.136719 C 27.657297 40.689556 25.866601 41 24 41 C 22.258089 41 20.578897 40.736024 18.998047 40.251953 L 23.994141 25.599609 z"/></svg></div>
-				</div>
-			</div>
+				
 
-			<div class="row mt-4"> 
-				<div class="col-6">
-					<div class="block bg-lightblue">Ai</div>
-				</div>
-				<div class="col-6">
-					<div class="block bg-pink">CSS</div>
-				</div>
-			</div>
+				<div class="block bg-lightblue">SQL</div>
+				<div class="block bg-pink">CSS</div>
 
-			<div class="row mt-4"> 
-				<div class="col-6">
 					<div class="block bg-pink vb">VB.NET</div>
-				</div>
-				<div class="col-6">
-					<div class="block bg-lightblue"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="256px" height="256px"><path d="M 16 2 C 15.496094 2 15.003906 2.183594 14.625 2.5625 L 11.8125 5.40625 C 11.660156 5.488281 11.53125 5.605469 11.4375 5.75 L 2.5625 14.625 C 1.804688 15.378906 1.804688 16.617188 2.5625 17.375 L 14.625 29.4375 C 15.382813 30.191406 16.617188 30.191406 17.375 29.4375 L 29.4375 17.375 C 30.195313 16.621094 30.195313 15.382813 29.4375 14.625 L 17.375 2.5625 C 16.996094 2.183594 16.503906 2 16 2 Z M 16 4.03125 L 27.96875 16 L 16 27.96875 L 4.03125 16 L 12.3125 7.71875 L 14.0625 9.46875 C 14.015625 9.636719 14 9.816406 14 10 C 14 10.738281 14.402344 11.371094 15 11.71875 L 15 20.28125 C 14.402344 20.628906 14 21.261719 14 22 C 14 23.105469 14.894531 24 16 24 C 17.105469 24 18 23.105469 18 22 C 18 21.261719 17.597656 20.628906 17 20.28125 L 17 12.4375 L 20.0625 15.5 C 20.019531 15.660156 20 15.828125 20 16 C 20 17.105469 20.894531 18 22 18 C 23.105469 18 24 17.105469 24 16 C 24 14.894531 23.105469 14 22 14 C 21.828125 14 21.660156 14.019531 21.5 14.0625 L 17.9375 10.5 C 17.980469 10.339844 18 10.171875 18 10 C 18 8.894531 17.105469 8 16 8 C 15.816406 8 15.636719 8.015625 15.46875 8.0625 L 13.71875 6.3125 Z"/></svg></div>
-				</div>
+					<div class="block bg-lightblue"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="256px" height="256px"><path d="M 16 2 C 15.496094 2 15.003906 2.183594 14.625 2.5625 L 11.8125 5.40625 C 11.660156 5.488281 11.53125 5.605469 11.4375 5.75 L 2.5625 14.625 C 1.804688 15.378906 1.804688 16.617188 2.5625 17.375 L 14.625 29.4375 C 15.382813 30.191406 16.617188 30.191406 17.375 29.4375 L 29.4375 17.375 C 30.195313 16.621094 30.195313 15.382813 29.4375 14.625 L 17.375 2.5625 C 16.996094 2.183594 16.503906 2 16 2 Z M 16 4.03125 L 27.96875 16 L 16 27.96875 L 4.03125 16 L 12.3125 7.71875 L 14.0625 9.46875 C 14.015625 9.636719 14 9.816406 14 10 C 14 10.738281 14.402344 11.371094 15 11.71875 L 15 20.28125 C 14.402344 20.628906 14 21.261719 14 22 C 14 23.105469 14.894531 24 16 24 C 17.105469 24 18 23.105469 18 22 C 18 21.261719 17.597656 20.628906 17 20.28125 L 17 12.4375 L 20.0625 15.5 C 20.019531 15.660156 20 15.828125 20 16 C 20 17.105469 20.894531 18 22 18 C 23.105469 18 24 17.105469 24 16 C 24 14.894531 23.105469 14 22 14 C 21.828125 14 21.660156 14.019531 21.5 14.0625 L 17.9375 10.5 C 17.980469 10.339844 18 10.171875 18 10 C 18 8.894531 17.105469 8 16 8 C 15.816406 8 15.636719 8.015625 15.46875 8.0625 L 13.71875 6.3125 Z"/></svg>
+					</div>
+		
 			</div>
+		</div>
 		
 		</div>
-		<div class="col-8">
-			<h6 class="title">About Me</h6>
-			<div class="w-100">
-				<p>I have been working as a computer programmer and web developer for more than 2 years. Though my tasks were mostly focused on the front-end side of a website (design/look), I also got to work on the inner workings and back-end of it (coding). 
-				</p>
-			</div>
-			<div class="d-flex w-100">
-				<div class="w-40">
-				<p class="desc-title">Web Design</p>
-				<p class="desc">Lorem ipsum meow I have a neko named Grayham, a persian fat cat.</p>
-			</div>
-			<div class="w-40">
-				<p class="desc-title">Web Design</p>
-				<p class="desc">Lorem ipsum meow I have a neko named Grayham, a persian fat cat.</p>
-			</div>
-			</div>
-		</div>
-	</div>
 	</div>
 </section>
-<section id="projects" class="container">
+<section id="projects" class="container pc">
 	<h6 class="title">My Portfolio</h6>
 	<div class="row">
 		<div class="col-6">
@@ -131,8 +178,68 @@
 	</div>
 
 </section>
+<section id="projects" class="container mobile">
+	<div class="container">
+		<h6 class="title">My Portfolio</h6>
+	<div class="d-flex flex-column">
+		<div class="">
+			<h1 class="desc">Check out my work and projects</h1>
+			<p class="sub-desc">Take a look on some of the stuff that I have previously worked on.</p>
+		</div>
+		<div class="w-100 proj d-flex">
+			<div class="proj-img">
+				<a href="https://sannohe-gohan.jp/" class="proj-name">
+					Sannohe Restaurant<br>
+					Portal Site
+				</a>
+				<div class="img-cont">
+					<img src="imgs/p1.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column">
+		<div class="w-100 proj">
+			<div class="proj-img">
+				<a href="https://hayahpasian.github.io/jnljprints/" class="proj-name">
+					JNLJ Printing<br>
+					Services
+				</a>
+				<div class="img-cont">
+					<img src="imgs/p2.png">
+				</div>
+			</div>
+		</div>
+		<div class="w-100 proj">
+			<div class="proj-img">
+				<a href="https://intocaringinhomecare.com" class="proj-name">
+					Into Caring in<br>
+					Home Care
+				</a>
+				<div class="img-cont">
+					<img src="imgs/p3.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column">
+		<div class="w-100 proj">
+			<div class="proj-img">
+				<a href="" class="proj-name">
+					Graphics &<br>
+					Prints
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</section>
 <footer id="contact" style="background-image: url('imgs/footer.png');">
-	<div id="footer-top" class="container">
+	<div class="container">
+		<div id="footer-top" class="container">
 		<h1 class="title">Have a New Project?</h1>
 		<p class="desc">Got a new product you want to showcase? or perhaps a new blog site you want to put up but don’t seem to know how to get it going? Let’s visualize those concepts together and start working towards your vision.</p>
 
@@ -148,6 +255,7 @@
 		<div class="copyright">
 			<p>©2021 All Rights Reserved.  Hayah Mae Pasian</p>
 		</div>
+	</div>
 	</div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
