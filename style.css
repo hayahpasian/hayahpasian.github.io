@@ -281,21 +281,25 @@ p.sub-desc {
         font-size: 2rem;
     }
 
-    .bg-lightblue:hover svg {
+/*     .bg-lightblue:hover svg {
         fill: white;
         transition: 1s;
-    }
-    .bg-lightblue svg {
+    } */
+ .bg-lightblue svg {
+        fill: white;
+        transition: 1s;
+ }
+/*     .bg-lightblue svg {
         fill: #89DBED;
-    }
+    } */
 
-    .block.bg-pink {
+/*     .block.bg-pink {
         color: #FDB3B3;
     }
     .bg-lightblue{
         color: #89DBED;
-    }
-    .block:hover{
+    } */
+    .block{
         color: white;
         transition: 1s;
     }
